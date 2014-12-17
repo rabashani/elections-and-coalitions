@@ -1,0 +1,36 @@
+﻿@using Elections.Domain.Configuration
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>@ViewBag.Title</title>
+		<script type="text/javascript" src="@Html.Raw(new PlatformSettings().SywWebSiteUrl.ToString())/platform/loader"> </script>
+		<link href="@Url.Content("~/static/css/Site.css")" rel="stylesheet" type="text/css" />
+        
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+        
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+    </head>
+	<body>
+		<div class="page">
+			<div id="header">
+				<div id="title">
+					<h1>ShopYourWay application wireframe</h1>
+				</div>
+			</div>
+			<div id="main">
+				@RenderBody()
+			</div>
+			<div id="footer">
+			</div>
+		</div>
+	</body>
+</html>
